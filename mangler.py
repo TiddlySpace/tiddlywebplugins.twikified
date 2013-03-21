@@ -7,6 +7,7 @@ This is required primarily for testing.
 import sys
 import os
 
+
 VIRTUAL_NAMESPACE = 'tiddlywebplugins'
 
 local_package = os.path.abspath(VIRTUAL_NAMESPACE)
