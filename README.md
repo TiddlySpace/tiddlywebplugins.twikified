@@ -26,16 +26,12 @@ ensures the plugin can be imported.
 
 `make install` installs the plugin as a package on your system 
 (you may need sudo for this.)
-You can then reference the plugin from your TiddlyWeb configuration 
-as a system plugin e.g:
 
-`system_plugins': ['tiddlywebplugins.twikified']`
+To set this plugin as the default renderer for all tiddlers, add the following to `tiddlywebconfig.py`:
 
-If you wish to use this with [Tiddlypace](https://github.com/TiddlySpace/tiddlyspace)
-make sure you declare the plugin in the configuration file _before_ the
-tiddlywebplugins.tiddlyspace plugin e.g:
-
-`'system_plugins': ['tiddlywebplugins.twikified', 'tiddlywebplugins.tiddlyspace']`
+```
+'wikitext.default_renderer': 'tiddlywebplugins.twikified'
+```
 
 # See Also
 

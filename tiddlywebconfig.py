@@ -1,4 +1,3 @@
-import mangler
 config = {
-		'system_plugins: ['tiddlywebplugins.twikified']
-		}
+        'wikitext.default_renderer': 'twikified',
+        }
