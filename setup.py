@@ -1,5 +1,3 @@
-import os
-from setuptools import setup, find_packages
 
 AUTHOR = 'Chris Dent'
 AUTHOR_EMAIL = 'cdent@peermore.com'
@@ -8,6 +6,9 @@ MAINTAINER_EMAIL = 'pads@thisispads.me.uk'
 NAME = 'tiddlywebplugins.twikified'
 DESCRIPTION = 'Interface between TiddlyWeb and the node.js wikifier for TiddlyWiki text'
 VERSION = '0.1.0'
+
+import os
+from setuptools import setup, find_packages
 
 setup(
     namespace_packages = ['tiddlywebplugins'],
