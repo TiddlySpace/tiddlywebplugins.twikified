@@ -1,4 +1,4 @@
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 # for sake of making config calls clean, we import render
 # into this space

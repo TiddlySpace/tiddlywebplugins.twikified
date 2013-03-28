@@ -5,7 +5,7 @@ MAINTAINER = 'Ben Paddock'
 MAINTAINER_EMAIL = 'pads@thisispads.me.uk'
 NAME = 'tiddlywebplugins.twikified'
 DESCRIPTION = 'Interface between TiddlyWeb and the node.js wikifier for TiddlyWiki text'
-VERSION = '0.1.0'
+VERSION = '0.1.1'
 
 import os
 from setuptools import setup, find_packages
