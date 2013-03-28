@@ -33,6 +33,10 @@ To set this plugin as the default renderer for all tiddlers, add the following t
 'wikitext.default_renderer': 'tiddlywebplugins.twikified'
 ```
 
+For more details on usage run:
+
+    pydoc tiddlywebplugins/twikified.render.py
+
 # Credits
 
 @cdent is the original author of twikified.  I've just packaged it up a bit.
