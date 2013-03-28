@@ -11,7 +11,7 @@ use this code as a serialization, not just a renderer. Whether
 rendering is done by the serialization server side or client side
 is controlled by twikified.render.
 
-The socket is at config['twikified.socket'], '/tmp/wst.sock' by
+The socket is at config['twikified.socket'], '/var/run/twikifier/wst.sock' by
 default. Running the server is up to the human installer at this point.
 
 If client side rendering is used, then a bunch of javascript is
@@ -76,7 +76,7 @@ def render(tiddler, environ):
         tiddlyweb_cookie = ''
 
     socket_path = environ['tiddlyweb.config'].get('twikified.socket',
-                                                  '/tmp/wst.sock')
+                                                  '/var/run/twikifier/wst.sock')
     twik_socket = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
     twik_socket.settimeout(15.0)
 
