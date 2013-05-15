@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/pads/tiddlywebplugins.twikified.png?branch=master)](https://travis-ci.org/pads/tiddlywebplugins.twikified)
+
 # About
 
 Provides an interface between TiddlyWeb and the node.js wikifier for TiddlyWiki text.
