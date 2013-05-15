@@ -9,17 +9,17 @@ from fake_twikifier import start_server
 
 socket_file = '/tmp/wst.sock'
 
-expected_twikified_content="<div>A <strong>tiddler</strong> <em>with</em> <code>wikitext</code></div>"
-expected_raw_content="<pre class='wikitext'>A ''tiddler'' //with// {{{wikitext}}}</pre>"
+expected_twikified_content='<div>A <strong>tiddler</strong> <em>with</em> <code>wikitext</code></div>'
+expected_raw_content='<pre class="wikitext">A ''tiddler'' //with// {{{wikitext}}}</pre>'
 
 
-def setup_module():
+def setup_function(func):
     initialize_app()
     reset_store()
     create_test_data()
 
 
-def teardown_module():
+def teardown_function(func):
     try:
         os.unlink(socket_file)
     except OSError:
@@ -27,6 +27,8 @@ def teardown_module():
 
 
 def test_get_tiddler_with_twikifier_off():
+    start_server(socket_file, expected_raw_content)
+
     http = httplib2.Http()
     response, content = http.request('http://our_test_domain:8001/bags/testbag/tiddlers/WikiTextTiddler',
                                  method='GET')
